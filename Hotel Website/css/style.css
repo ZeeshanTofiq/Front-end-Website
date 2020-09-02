@@ -1,0 +1,257 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    .container {
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        overflow: hidden;
+                    }
+                    .block-center{
+                        margin:auto;
+                    }
+                    .text-lightOrange{
+                        color:#f7c08a;
+                    }
+                    .font-40{
+                        font-size:40px;
+                    }
+                    .navbar {
+                        overflow: auto;
+                        color: white;
+                        background-color: #333;
+                    }
+                    
+                    .navbar .navbar-logo {
+                        font-weight: bold;
+                        /* background-color: red; */
+                        float: left;
+                        margin-top: 20px;
+                    }
+                    
+                    .navbar a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    
+                    .navbar ul {
+                        float: right;
+                        list-style: none;
+                        /* background-color: blue; */
+                    }
+                    
+                    .navbar ul li {
+                        padding: 2px;
+                        /* margin-right:5px; */
+                        float: left;
+                        display: block;
+                        padding: 20px;
+                    }
+                    /* .navbar ul li:hover,
+                    .navbar ul li.current a{
+                        background-color:#444;
+                        color:#f7c08a;
+                    } */
+                    .navbar ul li:hover a,
+                    .navbar ul li:hover,
+                    .navbar ul li.current ,
+                    .navbar ul li.current a{
+                        color:#f7c08a;
+                        background-color:#444;
+                    }
+                    .center-content {
+                        background-image: url('../image/center-content.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        text-align: center;
+                        color: white;
+                        height: 100vh;
+                        /* top:50%; */
+                        /* position: relative; */
+                    }
+                    
+                    .center-content .center-content-inner {
+                        /* padding-top: 50%; */
+                        position: absolute;
+                        margin-left: 25vw;
+                        text-align: center;
+                        /* border: 1px solid black; */
+                        top: 50%;
+
+                        /* margin-left:50%; */
+                
+                    }
+                    .center-content .center-content-heading{
+                        font-size:70px;
+                    }
+                    .text-grey{color:#333;}
+                    .button-grey {
+                        background-color: #333;
+                        padding:10px;
+                        border-radius:2px;
+                        color:white;
+                        border:1px solid #333;
+                        overflow:hidden;
+                    }
+                    .button-grey:hover{
+                        background-color:#f7c08a;
+                        color:#333;
+                        border:1px solid #f7c08a;
+                    }
+                    
+                    .second-content {
+                        overflow: hidden;
+                        color: white;
+                    }
+                    /* .image1 {
+                        float: left;
+                        width: 50%;
+                    } */
+                    
+                    .image1 img {
+                        float: left;
+                        width: 50%;
+                        height: 430px;
+                    }
+                    
+                    .second-content .content1 {
+                        float: right;
+                        width: 50%;
+                        height: 430px;
+                        background-color: #333;
+                    }
+                    
+                    .second-content .content1 p {
+                        text-align: justify;
+                        line-height: 1.5em;
+                    }
+                    
+                    .second-content .content1 .content1-heading {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    
+                    footer {
+                        text-align: center;
+                        background-color: #333;
+                        color: white;
+                        padding: 20px;
+                        overflow:hidden;
+                    }
+                    
+                    .content2 {
+                        overflow: hidden;
+                    }
+                    
+                    .content2 .block2 {
+                        background-color: #f7c08a;
+                    }
+                    
+                    .content2 .block {
+                        width: 33.33%;
+                        height: 250px;
+                        float: left;
+                        text-align: center;
+                    }
+                    .content1-btn{
+                        margin:auto;
+                        width:30%;
+
+                    }
+
+                    /* _____________________________________________
+                     */
+                     .about-hotel{
+                         overflow:auto;
+                     }
+                     .about-hotel img{
+                         border-radius:50%;
+                         float:right;
+                         height:250px;
+                     }
+                     .about-hotel2{
+                         background-image:url('../image/test-bg.jpg');
+                         background-repeat: no-repeat;
+                         padding:100px;
+                         margin-top:10px;
+                     }
+                     .about-hotel-content{
+                         float:left;
+                         text-align: justify;
+                         width:50%;
+                         margin-top:10px;
+                         margin-bottom:10px;
+                     }
+                     
+                     .about-hotel2 .about-hotel2-block{
+                         background-color:#f7c08a;
+                         overflow: hidden;
+                         margin:20px;
+                         height:170px;
+                         border-radius:10px;
+                         /* width:70%; */
+                         /* margin:40px; */
+                     }
+                     .about-hotel2 h1{
+                         font-size:40px;
+                         color:white;
+                         text-align:center;
+
+                     }
+                     .about-hotel2-block img{
+                         width:13%;
+                         border-radius:50%;
+                         float: left;
+                         height:150px;
+                         padding:10px;
+                         /* width:200px; */
+                     }
+                     .about-hotel2-block p{
+                         width:80%;
+                         position: relative;
+                         top:30%;
+                         float:right;
+                         padding:10px;
+                         /* padding-top:50%; */
+                     }
+
+
+                     /* ______________________________ */
+
+                     .form-control{
+                         width:100%;
+                         padding:6px;
+                         border:1px solid #ddd;
+                         border-radius:2px;
+                        }
+                     .form-control:focus{
+                        outline:none;
+                         border-color:#f7c08a;
+                     }
+                     .form-group{
+
+                         margin-bottom:10px;
+                     }
+
+                     .contact-info{
+                         overflow:hidden;
+                         background-color:#333;
+
+                     }
+                     .contact-info .contact-info-block{
+                         color:white;
+                         float:left;
+                         /* border:1px solid red; */
+                         width:33.33%;
+                         text-align:center;
+                         padding:50px;
+                     }
+                     .btn-white{
+                         background-color:white;
+                         color:#333;
+                         padding:10px;
+                         text-decoration:none;
+                         text-align:center;
+                     }
