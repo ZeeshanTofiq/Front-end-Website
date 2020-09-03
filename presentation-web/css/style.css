@@ -1,0 +1,157 @@
+:root{
+    --page-1-bg-color : rgb(112, 112, 211);
+    --grey-color:#333;
+    --page-2-bg-color: tan;
+    --page-3-bg-color: teal;
+    --page-4-bg-color: slateblue;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* color:white; */
+}
+body{
+    color:white;
+    overflow:hidden;
+    
+}
+
+h1{
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
+/* utilty */
+.bg-grey{
+    background:var(--grey-color);
+}
+.text-grey{
+    color:var(--grey-color);
+}
+.text-light{
+    color:white;
+}
+
+.btn-grey,
+.btn-grey a{
+    background:var(--grey-color);
+    color:white;
+    padding:1rem;
+    text-align:center;
+    border:0;
+    border-radius:.3rem;
+    overflow: hidden;
+    transition: all .4s ease-in;
+}
+.btn-grey:hover,
+.btn-grey:hover a{
+    background:white;
+    color:var(--grey-color);
+}
+.btn-white,
+.btn-white a{
+    overflow:hidden;
+    color:var(--grey-color);
+    background:white;
+    padding:1rem;
+    border:0;
+    text-align:center;
+    border-radius:.3rem;
+    transition: all .4s ease-in;
+
+}
+.btn-grey a>i{
+    color:var(--grey-color);
+    background:white;
+    border-radius:50%;
+}
+.btn-grey:hover a>i{
+    background-color:var(--grey-color);
+    color:white;
+}
+
+
+.btn-white a>i{
+    background-color:var(--grey-color);
+    color:white;
+    border-radius:50%;
+}
+
+.btn-white:hover,
+.btn-white:hover a{
+    background:var(--grey-color);
+    color:white;
+}
+.btn-white:hover a>i{
+    background-color:white;
+    color:var(--grey-color);
+}
+button>a{
+    text-decoration:none;
+}
+
+
+
+
+
+
+/* pages */
+.page{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.page-item{
+    margin-top:1rem;
+}
+.page-item:first-child{
+    margin-top:0;
+}
+.page >p{
+    width:70vw;
+}
+.page-1{
+    background-color:var(--page-1-bg-color);
+    height:100vh;
+    text-align:center;
+}
+.page-1 h1{
+    transform:translateY(-1200px);
+    animation:heading-animate .4s forwards ease-in;
+}
+.page-1 p{
+    transform:translateX(-1200px);
+    animation:para-animate .4s forwards ease-in;
+}
+.page-2{
+    background-color:var(--page-2-bg-color);
+    height:100vh;
+
+}
+.page-3{
+    height:100vh;
+    background-color:var(--page-3-bg-color);
+}
+.page-4{
+    background-color:var(--page-4-bg-color);
+    height:100vh;
+
+}
+@keyframes heading-animate{
+    to{
+        transform:translateY(0px);
+    }
+}
+@keyframes para-animate{
+    to{
+        transform:translateX(0);
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+<body>
+            <!-- Page 1 -->
+    <section class="page-1 page" id="page-1">
+        <h1 class="page-item">
+            Welcome to my presentation
+        </h1>
+        <p class="page-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo necessitatibus vitae corrupti illo rem molestiae eligendi perspiciatis dicta aperiam, laborum eos! Blanditiis magnam voluptatibus voluptatem iste doloribus similique velit voluptates, saepe commodi sed eaque.
+        </p>
+        <div class="btn-group page-item">
+        <button class="btn-white btn-next">
+            <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down bg-grey"></i></a>                
+        </button>
+        </div>
+    </section>
+
+
+
+            <!-- Page 2 -->
+    <section class="page-2 page" id="page-2">
+        <h1 class="page-item">
+           Page 2
+        </h1>
+        <p class="page-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo necessitatibus vitae corrupti illo rem molestiae eligendi perspiciatis dicta aperiam, laborum eos! Blanditiis magnam voluptatibus voluptatem iste doloribus similique velit voluptates, saepe commodi sed eaque.
+        </p>
+        <div class="btn-group page-item">
+        <button class="btn-grey">
+            <a href="#page-1" class="btn">Previous Page<i class="fas fa-arrow-circle-up bg-grey"></i></a>                
+        </button>
+        <button class="btn-white btn-next">
+            <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down bg-grey"></i></a>                
+        </button>
+        </div>
+    </section>
+
+
+
+            <!-- Page 3 -->
+    <section class="page-3 page" id="page-3">
+        <h1 class="page-item">
+            Page 3
+        </h1>
+        <p class="page-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo necessitatibus vitae corrupti illo rem molestiae eligendi perspiciatis dicta aperiam, laborum eos! Blanditiis magnam voluptatibus voluptatem iste doloribus similique velit voluptates, saepe commodi sed eaque.
+        </p>
+        <div class="btn-group page-item">
+            <button class="btn-grey">
+                <a href="#page-2" class="btn">Previous Page<i class="fas fa-arrow-circle-up bg-grey"></i></a>                
+            </button>
+            <button class="btn-white btn-next">
+                <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down bg-grey"></i></a>                
+            </button>
+        </div>
+    </section>
+
+
+
+    <!-- Page 4 -->
+    <section class="page-4 page" id="page-4">
+        <h1 class="page-item">
+           Page 4
+        </h1>
+        <p class="page-item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo necessitatibus vitae corrupti illo rem molestiae eligendi perspiciatis dicta aperiam, laborum eos! Blanditiis magnam voluptatibus voluptatem iste doloribus similique velit voluptates, saepe commodi sed eaque.
+        </p>
+        <div class="btn-group page-item">
+            <button class="btn-grey">
+                <a href="#page-3" class="btn">Previous Page<i class="fas fa-arrow-circle-up bg-grey"></i></a>                
+            </button>
+        </div>
+    </section>
+
+
+
+    <script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script>
+</body>
+</html>
