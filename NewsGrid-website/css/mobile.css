@@ -1,0 +1,20 @@
+#navbar-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:.5rem;
+}
+#navbar-grid .navbar-grid-social{
+    display:none;
+}
+
+#editor-picks-container{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+#footer-containter .container-1{
+    grid-template-columns: 1fr;
+}
+#main-about .main-about-container{
+    display:grid;
+    grid-template-columns: 1fr;
+}

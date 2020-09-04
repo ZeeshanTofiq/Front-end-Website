@@ -1,0 +1,242 @@
+:root{
+    --grey-color:#333;
+    --red-color:red;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size:16px;
+    margin:0;
+    padding:0;
+    /* background-color:bla */
+}
+/* Utility */
+a{
+    text-decoration:none;
+}
+.text-dark{color:black;}
+.text-white{
+    color:white;
+}
+.badge{
+    color:white;
+    font-size:10px;
+    border:none;
+    border-radius:30%;
+    padding:.4rem;
+}
+.bg-yellow{
+    background:yellow;
+}
+.zee-list{
+    list-style:none;
+}
+.zee-list li a{
+    color:white;
+}
+.zee-list li{
+    border-bottom :1px solid rgb(165, 157, 157); 
+    padding:.2rem;
+}
+.zee-list li:last-child{
+    border-bottom:none;
+}
+.zee-list li a:hover{
+    color:red;
+}
+.form-control{
+    width:100%;
+    height:2rem;
+}
+.bg-grey{background:var(--grey-color)};
+.bg-orange{
+    background-color:orange;
+}
+.bg-purple{
+    background-color:rgb(161, 98, 161);
+}
+.bg-red{background:red;}
+.bg-blue{
+    background-color:rgb(76, 76, 173);
+}
+.bg-white{
+    background-color:white;
+}
+.text-bold{
+    font-weight:bold;
+}
+.btn-red{
+    padding:.7rem;
+    background-color:var(--red-color);
+    color:white;
+    border:none;
+}
+.btn-orange{
+    padding:.7rem;
+    background-color:orange;
+    color:white;
+    border:none;
+
+}
+.btn-orange:hover{
+    background-color:rgb(161, 118, 37);
+
+}
+.btn-red:hover{
+    background-color:rgb(194, 22, 22);
+}
+
+/* navbar */
+.navbar-grid{
+    z-index:3;
+    position:sticky;
+    display:grid;
+    padding:.5rem;
+    grid-template-columns: 3fr 2fr 1fr;
+}
+.navbar-grid img{
+    width:12rem;
+}
+.navbar-grid ul{
+    list-style:none;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.navbar-grid .navbar-grid-item{
+    justify-self: center;
+}
+.navbar-grid ul li a{
+    color:var(--grey-color);
+    padding:.5rem;
+    border-radius:.1rem;
+}
+.navbar-grid ul li a.current
+{
+    background-color:var(--red-color);
+    color:white;
+}
+.navbar-grid .navbar-grid-social i{
+     color:var(--grey-color);
+}
+
+.navbar-grid ul li:hover a{
+    background-color:white;
+    color:var(--grey-color);
+    opacity:.6;
+}
+
+
+/* showcase */
+.showcase{
+    background:url('../img/featured.jpg') no-repeat center center/cover;
+    width:100%;
+    padding:8rem;
+}
+
+
+/* editor pickers */
+.editor-picks{
+    width:80vw;
+    margin:auto;
+    /* width:0vw; */
+}
+.editor-picks h1{
+    padding:2rem;
+}
+.editor-picks-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+}
+.editor-picks-item{
+    /* border:1px solid black; */
+    padding:2rem;
+}
+.editor-picks-item img{
+    /* width: 25rem; */
+    /* height:12rem; */
+    width:100%;
+}
+
+
+/* footer */
+.footer-containter{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:2rem;
+    padding:2.5rem;
+}
+.footer-containter .container-1{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:2rem;
+}
+.footer-containter .container-1 img{
+    width:50%;
+}
+.footer-containter .container-2{
+    background-color:rgb(117, 114, 114);
+    text-align:center;
+    padding:.3rem;
+}
+
+
+
+/* about page */
+.main-about{
+    margin:1rem 4rem;
+}
+.main-about-container{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+}
+.popup{
+    background-color:var(--red-color);
+    color:white;
+    padding:1rem;
+}
+.btn-grey{
+    color:white;
+    background-color:var(--grey-color);
+    width:100%;
+    height:2rem;
+    border:none;
+    padding:.3rem;
+}
+.btn-grey:hover{
+    color:var(--grey-color);
+    background-color:white;
+    border:none;
+}
+
+
+
+
+/* ARTICLE PAGE */
+.article-main{
+    padding:3rem 10rem;
+}
+.article-main-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:3rem;
+}
+.article-main img{
+    width:100%;
+}
+.author{
+    display: flex;
+    justify-content: space-between;
+}
+.cat-list{
+    list-style:none;
+}
+.cat-list li{
+    border-bottom: 1px dotted black;
+    padding:.6rem;
+    /* border-style: dotted; */
+}
+.cat-list li:hover {
+    color:var(--red-color);
+}
